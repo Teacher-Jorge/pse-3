@@ -371,30 +371,69 @@ let btnDeal = document.getElementById('btnDeal')
 let btnMood = document.getElementById('btnMood')
 let btnPick = document.getElementById('btnPick')
 let btnItsADeal = document.getElementById('btnItsADeal')
-let vocab = document.getElementById('vocab')
 
 btnDeal.addEventListener('click', function() {
     let audio = document.getElementById('clickSound')
     audio.play()
-    vocab.innerHTML = 'O que vai ser?'
-})
+    
+        document.getElementById('btnDeal').innerHTML = 'O que vai ser'
+        document.getElementById('btnDeal').setAttribute("style", "box-shadow: 0 0 0")
+        btnDeal.style.backgroundColor = 'lime'
+        setTimeout(function() {
+            document.getElementById('btnDeal').innerHTML = "What's the deal"
+            document.getElementById('btnDeal').setAttribute("style", "box-shadow: 1px 1px 2px")
+            btnDeal.style.backgroundColor = 'white'
+        }, 1500)
+    }
+)
 
 btnMood.addEventListener('click', function() {
     let audio = document.getElementById('clickSound')
     audio.play()
-    vocab.innerHTML = 'Afim de'
-})
+    
+        document.getElementById('btnMood').innerHTML = 'Afim de'
+        document.getElementById('btnMood').setAttribute("style", "box-shadow: 0 0 0")
+        btnMood.style.backgroundColor = 'lime'
+        setTimeout(function() {
+            document.getElementById('btnMood').innerHTML = "in the mood for"
+            document.getElementById('btnMood').setAttribute("style", "box-shadow: 1px 1px 2px")
+            btnMood.style.backgroundColor = 'white'
+        }, 1500)
+    }
+)
 
 btnPick.addEventListener('click', function() {
     let audio = document.getElementById('clickSound')
     audio.play()
-    vocab.innerHTML = 'Me apanhar'
-})
+    
+        document.getElementById('btnPick').innerHTML = 'me apanhar'
+        document.getElementById('btnPick').setAttribute("style", "box-shadow: 0 0 0")
+        btnPick.style.backgroundColor = 'lime'
+        setTimeout(function() {
+            document.getElementById('btnPick').innerHTML = "pick me up"
+            document.getElementById('btnPick').setAttribute("style", "box-shadow: 1px 1px 2px")
+            btnPick.style.backgroundColor = 'white'
+        }, 1500)
+    }
+)
 
 btnItsADeal.addEventListener('click', function() {
     let audio = document.getElementById('clickSound')
     audio.play()
-    vocab.innerHTML = 'Combinado!'
-})
+    
+        document.getElementById('btnItsADeal').innerHTML = 'Combinado'
+        document.getElementById('btnItsADeal').setAttribute("style", "box-shadow: 0 0 0")
+        btnItsADeal.style.backgroundColor = 'lime'
+        setTimeout(function() {
+            document.getElementById('btnItsADeal').innerHTML = "It's a deal"
+            document.getElementById('btnItsADeal').setAttribute("style", "box-shadow: 1px 1px 2px")
+            btnItsADeal.style.backgroundColor = 'white'
+        }, 1500)
+    }
+)
+
+
+
+
 
 
