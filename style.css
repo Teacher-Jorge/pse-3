@@ -7,13 +7,20 @@
 }
 
 .heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600;
+}
+
+.heading {
     font-family: 'Bangers';
     font-size: 2rem;
     text-shadow: 2px 2px 3px rgba(0,0,0, 0.7);
     color: rgb(255, 51, 0);
     display: grid;
-    max-width: 500px;
-   
+    justify-content: center;
+    max-width: 600px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
